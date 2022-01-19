@@ -6,6 +6,10 @@ import { parseISO, format } from "date-fns";
 
 const PostDetail = ({ postData }) => {
   const [data, setData] = useState(3);
+  const fetchHandler = async () => {
+    const res = await fetch("/api/hello");console.log('$$$$', res.body.data)
+    setData(JSON.stringify(res));
+  };
   return (
     <div>
       <Head>
