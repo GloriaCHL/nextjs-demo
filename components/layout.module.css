@@ -1,0 +1,7 @@
+.container {
+  background-color: azure;
+  color: aliceblue;
+  padding: 0 1rem;
+  max-width: 36rem;
+  margin: 3rem auto 6rem;
+}
